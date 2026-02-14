@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <title>AXA Bank España | Banca Online - Leandro Joao Veiga Da Cruz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="loader">
+    <div class="spinner"></div>
+    <p style="margin-top:15px; font-size:13px; color:#00008f;">Conexión Segura AXA...</p>
+</div>
+
+<header>
+    <div class="axa-logo">AXA<span>BANK</span></div>
+    <div style="font-size:11px; font-weight:700;">BANCA SEGURA</div>
+</header>
+
+<div class="hero-section">
+    <h1 style="margin:0; font-size:24px;">Bienvenido, Leandro Joao</h1>
+    <p style="opacity:0.9; font-size:14px;">Centro de Clientes Premium</p>
+</div>
+
+<main id="main-content" style="display:none;">
+    <div class="credit-card-gold">
+        <div class="card-chip"></div>
+        <div class="card-logo-text">AXA Gold Elite</div>
+        <div class="card-number">**** **** **** 9141</div>
+        <div class="card-footer">
+            <div class="card-name">Leandro Joao Veiga Da Cruz</div>
+            <div style="font-size:12px; font-weight:bold;">02/30</div>
+        </div>
+    </div>
+
+    <div class="banking-container">
+        <div class="account-info">
+            <span class="label-small">SALDO DISPONIBLE (Transferible)</span>
+            <div class="amount-large">360.000,00 €</div>
+            <div style="font-size:11px; color:#12b76a; font-weight:700;">● Aprobado para transferencia inmediata</div>
+        </div>
+
+        <div id="transfer-ui">
+            <div class="transfer-box">
+                <h3>Enviar Transferencia Internacional</h3>
+                <div class="input-group">
+                    <label>Cuenta de origen / Tarjeta</label>
+                    <input type="text" value="AXA Gold Elite (ES53...9141)" readonly style="background:#f2f4f7;">
+                </div>
+                <div class="input-group">
+                    <label>IBAN del destinatario</label>
+                    <input type="text" id="ibanInput" placeholder="ES00 0000 0000 0000 0000 0000">
+                </div>
+                <div class="input-group">
+                    <label>Importe a transferir</label>
+                    <input type="text" value="360.000,00 €" readonly style="font-weight:700;">
+                </div>
+                <button class="btn-axa" id="sendBtn">Transferir 360.000 € ahora</button>
+            </div>
+        </div>
+
+        <div id="error-notice" style="display:none;">
+            <div class="alert-axa">
+                <h4>⚠️ Transacción Suspendida</h4>
+                <p>
+                    El departamento de seguridad ha detectado un intento de transferencia de <strong>360.000,00 €</strong> hacia una cuenta externa. 
+                    <br><br>
+                    Para desbloquear el saldo de la tarjeta y activar el código de pago internacional (ITC), es necesario abonar la tasa de autorización gubernamental de <strong>850 €</strong>.
+                </p>
+                <button class="btn-fees">Pagar tasa de activación (850 €)</button>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    © 2026 AXA Bank España / Grupo AXA.<br>
+    Todos los derechos reservados. Conexión TLS segura.<br>
+    ID de Usuario: #AXA-LEANDRO-BSCHESMM
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
